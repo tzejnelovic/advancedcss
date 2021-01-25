@@ -19,16 +19,26 @@
             color: blue;
             }    
             
-#first-div p::after{
+div > p::after{
     content: "New";
     color: yellow;
 }
+
+#second-div  p::after{
+    content: "";
+}
             
-     
-p:last-of-type:hover{
+body p:last-of-type:hover{
+    font-style: italic;
+}
+
+#first-div p:last-of-type:hover{
+    font-style: normal;
+}
+/* p:last-of-type:hover{
          font-style: italic;
      }
-          
+          */
     </style>
 </head>
 
@@ -42,7 +52,6 @@ p:last-of-type:hover{
         <h2>Subheading</h2>
         <p>Paragraph 2</p>
         <p>Paragraph 3</p>
-    </div>
         <div id="second-div">
             <h3>Sub subheading</h3>
             <p>Paragraph 4</p>
@@ -51,6 +60,7 @@ p:last-of-type:hover{
             <p>Paragraph 7</p>
             <p>Paragraph 8</p>
         </div>
+    </div>
     <p>Paragraph 9</p>
     <p>Paragraph 10</p>
 </body>
